@@ -8,3 +8,5 @@ ng serve --open
 ng generate component heroes
 
 ng generate component hero-detail
+
+ng generate service hero
