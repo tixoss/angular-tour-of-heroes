@@ -2,12 +2,15 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeroesComponent } from './heroes.component';
 
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
   let fixture: ComponentFixture<HeroesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[ HttpClientTestingModule ],
       declarations: [ HeroesComponent ]
     })
     .compileComponents();
